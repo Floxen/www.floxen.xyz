@@ -1,3 +1,3 @@
-# www.floxen.xyz
+# https://floxen.xyz
 
 Just a my personal website using CSS and HTML.
