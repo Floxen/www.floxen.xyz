@@ -1,0 +1,324 @@
+
+@import url("https://fonts.googleapis.com/css?family=Russo One");
+@import url("https://fonts.googleapis.com/css?family=Source Code Pro");
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-attachment: fixed;
+    background-image: radial-gradient(rgb(15, 15, 15), rgb(0, 0, 0));
+}
+
+.wrap {
+    z-index: 2;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-width: max-content;
+
+    user-select: none;
+}
+
+.nadpis {
+    position: relative;
+    top: -23px;
+}
+
+.nadpis p {
+    font-family: "Russo One";
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-size: 64px;
+    color: white;
+}
+
+.odkazy {
+    position: relative;
+    top: -8px;
+
+    color: white;
+    text-align: center;
+
+    margin: 12px auto;
+}
+
+.odkazy svg {
+    margin: 0 12px;
+
+    transition: 0.2s;
+}
+
+.odkazy svg:hover {
+    color: #ff9c32e0;
+}
+
+.avatar {
+    position: relative;
+    top: -52px;
+    text-align: center;
+}
+
+.avatar img {
+    width: 128px;
+    border-radius: 50%;
+    -webkit-user-drag: none;
+    border: 2px solid #888;
+}
+
+.pod-odkazy {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    min-width: max-content;
+}
+
+.pod-odkazy img {
+    width: 32px;
+    height: 32px;
+
+    display: inline-flex;
+    margin: 0 10px;
+
+    border: 2px solid #444;
+    border-radius: 50%;
+    padding: 12px;
+
+    transition: all 0.12s;
+}
+
+.pod-odkazy img:hover {
+    background: rgba(100, 100, 100, .2);
+    border: 2px solid #502832;
+}
+
+.navbar {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: rgba(136, 136, 136, 0.151);
+    padding: 5px;
+
+    border-radius: 32px;
+    border: 2px solid rgb(46, 46, 46);
+
+    min-width: max-content;
+
+    user-select: none;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-flex;
+    margin: 0 2px;
+    color: white;
+    background-color: transparent;
+    border-radius: 32px;
+    padding: 8px;
+
+    font-family: "Source Code Pro";
+    font-size: 14px;
+    font-weight: normal;
+
+    transition: all 0.12s;
+}
+
+.navbar li[is-active=true] {
+    text-decoration: 2px underline white;
+    text-underline-offset: 3px;
+}
+
+.navbar li:hover {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-info {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+
+    min-width: max-content;
+}
+
+.contact-info ul {
+    user-select: none;
+}
+
+.contact-info li {
+    display: block;
+    margin: 5px 0;
+
+    color: white;
+    font-family: "Source Code Pro";
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.contact-info li:first-child {
+    margin: 0 0 20px 0;
+}
+
+.ostatni-weby li {
+    margin: 5px 0;
+
+    color: white;
+    font-family: "Source Code Pro";
+    font-size: 14px;
+    font-weight: normal;
+
+    transition: all 0.2s;
+}
+
+.ostatni-weby a {
+    font-family: "Source Code Pro";
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(105, 213, 255);
+    text-decoration: none;
+}
+
+.ostatni-weby li:first-child {
+    margin: 0 0 20px 0;
+
+    list-style: none;
+    margin-left: -18px;
+
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.ostatni-weby li:hover {
+    transform: translate(-3px, -3px);
+    
+}
+
+.skilly {
+    position: relative;
+    top: 0;
+    left: 80px;
+}
+
+.skilly ul {
+    list-style: none;
+}
+
+.skilly li * {
+    display: inline-flex;
+}
+
+.skilly li {
+    display: block;
+
+    color: white;
+
+    font-family: "Source Code Pro";
+    font-size: 14px;
+    font-weight: normal;
+
+    margin: 9px 0;
+}
+
+.skilly li:first-child {
+    margin: 0 0 20px 0;
+
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: -14px;
+}
+
+.box {
+    position: relative;
+    top: 3px;
+    width: 250px;
+    height: 16px;
+    border: 1px solid white;
+    border-radius: 32px;
+}
+
+.progress {
+    position: relative;
+    left: -251px;
+    top: 0;
+    border-right: 3px solid transparent;
+    width: 80px;
+    height: 16px;
+    background-color: transparent;
+    border-radius: 32px;
+}
+
+.perc {
+    position: relative;
+    top: -2px;
+    left: 6px;
+
+    color: yellow;
+
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.java {
+    width: 210px;
+    background: rgb(3, 88, 0);
+    border-right: 3px solid rgb(255, 26, 26);
+}
+
+.cs {
+    width: 150px;
+    background: rgb(3, 88, 0);
+    border-right: 3px solid rgb(255, 26, 26);
+}
+
+.py {
+    width: 100px;
+    background: rgb(3, 88, 0);
+    border-right: 3px solid rgb(255, 26, 26);
+}
+
+.linux {
+    width: 150px;
+    background: rgb(3, 88, 0);
+    border-right: 3px solid rgb(255, 26, 26);
+}
+
+.win {
+    width: 190px;
+    background: rgb(3, 88, 0);
+    border-right: 3px solid rgb(255, 26, 26);
+}
+
+@media screen and (max-width: 380px) {
+
+    .nadpis p {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .odkazy {
+        margin: 12px auto;
+    }
+
+    .odkazy svg {
+        display: inline-flex;
+        width: 20px;
+        height: 20px;
+    }
+}
